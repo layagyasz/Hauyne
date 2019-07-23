@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hauyne", "Hauyne\Hauyne.csproj", "{9B5BF73D-5F30-4C25-A5F0-B2162A4B0AC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardamom", "..\..\Code\ROTNS\Cardamom\Cardamom.csproj", "{A416D343-545A-40B0-9AE3-A5AAA9D47E79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{9B5BF73D-5F30-4C25-A5F0-B2162A4B0AC9}.Debug|x86.Build.0 = Debug|x86
 		{9B5BF73D-5F30-4C25-A5F0-B2162A4B0AC9}.Release|x86.ActiveCfg = Release|x86
 		{9B5BF73D-5F30-4C25-A5F0-B2162A4B0AC9}.Release|x86.Build.0 = Release|x86
+		{A416D343-545A-40B0-9AE3-A5AAA9D47E79}.Debug|x86.ActiveCfg = Debug|x86
+		{A416D343-545A-40B0-9AE3-A5AAA9D47E79}.Debug|x86.Build.0 = Debug|x86
+		{A416D343-545A-40B0-9AE3-A5AAA9D47E79}.Release|x86.ActiveCfg = Release|x86
+		{A416D343-545A-40B0-9AE3-A5AAA9D47E79}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

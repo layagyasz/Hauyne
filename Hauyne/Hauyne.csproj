@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9B5BF73D-5F30-4C25-A5F0-B2162A4B0AC9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Hauyne</RootNamespace>
+    <AssemblyName>Hauyne</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\Generated.cs" />
+    <Compile Include="Engine\Generator.cs" />
+    <Compile Include="Engine\MatchRule.cs" />
+    <Compile Include="Engine\PrintRule.cs" />
+    <Compile Include="Engine\ReplaceRule.cs" />
+    <Compile Include="Engine\Set.cs" />
+    <Compile Include="Engine\SingleGenerator.cs" />
+    <Compile Include="Engine\SumGenerator.cs" />
+    <Compile Include="Parsing\Operator.cs" />
+    <Compile Include="Parsing\ParseNode.cs" />
+    <Compile Include="Parsing\ParseTree.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Sound.cs" />
+    <Compile Include="SoundClass.cs" />
+    <Compile Include="Word.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Engine\" />
+    <Folder Include="Parsing\" />
+    <Folder Include="Examples\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Examples\Example.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Code\ROTNS\Cardamom\Cardamom.csproj">
+      <Project>{A416D343-545A-40B0-9AE3-A5AAA9D47E79}</Project>
+      <Name>Cardamom</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
